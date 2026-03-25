@@ -1,0 +1,65 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+  font-family: "Noto Serif JP", serif;
+}
+
+/* キオスクモード時に body に適用 */
+body.kiosk {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  cursor: none;
+  background: #000;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background: #1a1a1a;
+}
+
+.display-part {
+  width: 100%;
+  padding-bottom: 100%;
+  position: relative;
+  box-sizing: border-box;
+  display: block;
+}
+
+.display-part.kiosk {
+  width: 100vw;
+  height: 100vh;
+  padding-bottom: 0;
+}
+
+.back-img {
+  border: 0;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+  position: absolute;
+}
+
+.kiosk .back-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+}
+
+.credit {
+  color: #888;
+  font-size: 12px;
+  padding: 8px;
+  text-align: center;
+}

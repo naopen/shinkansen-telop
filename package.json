@@ -1,0 +1,30 @@
+{
+  "name": "shinkansen-telop",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "dev:api": "wrangler pages dev dist",
+    "build": "tsc -b && vite build",
+    "preview": "wrangler pages dev dist",
+    "deploy": "pnpm build && wrangler pages deploy dist --project-name=shinkansen-telop"
+  },
+  "dependencies": {
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": ["esbuild", "sharp", "workerd"]
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20260317.1",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.1",
+    "fast-xml-parser": "^5.5.9",
+    "typescript": "^6.0.2",
+    "vite": "^8.0.2",
+    "wrangler": "^4.77.0"
+  }
+}
