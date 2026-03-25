@@ -4,12 +4,11 @@ import "../styles/global.css";
 
 interface ShinkansenBoardProps {
   text: string;
-  kioskMode: boolean;
 }
 
-export function ShinkansenBoard({ text, kioskMode }: ShinkansenBoardProps) {
+export function ShinkansenBoard({ text }: ShinkansenBoardProps) {
   return (
-    <div className={`display-part${kioskMode ? " kiosk" : ""}`}>
+    <div className="display-part">
       <img
         src="/background.jpg"
         alt="新幹線車内"

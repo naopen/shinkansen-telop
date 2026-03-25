@@ -43,22 +43,6 @@
   object-fit: fill;
   display: block;
 }
-
-/* キオスクモード: 背景の cover トリミングに合わせて調整 */
-.kiosk .scroll {
-  top: 21%;
-  left: 38%;
-  width: 49%;
-  height: 7%;
-}
-
-.kiosk .grid {
-  top: 21%;
-  left: 38%;
-  width: 49%;
-  height: 7%;
-}
-
 @keyframes scrollAnime {
   0% {
     transform: translateX(0);

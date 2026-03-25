@@ -11,15 +11,6 @@ body {
   font-family: "Noto Serif JP", serif;
 }
 
-/* キオスクモード時に body に適用 */
-body.kiosk {
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  cursor: none;
-  background: #000;
-}
-
 .app {
   display: flex;
   flex-direction: column;
@@ -36,25 +27,12 @@ body.kiosk {
   display: block;
 }
 
-.display-part.kiosk {
-  width: 100vw;
-  height: 100vh;
-  padding-bottom: 0;
-}
-
 .back-img {
   border: 0;
   width: 100%;
   height: auto;
   z-index: 1;
   position: absolute;
-}
-
-.kiosk .back-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center 30%;
 }
 
 .credit {
