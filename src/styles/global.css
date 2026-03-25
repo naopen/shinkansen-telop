@@ -9,6 +9,7 @@
 body {
   background: #000;
   font-family: "Noto Serif JP", serif;
+  overflow: hidden;
 }
 
 .app {
@@ -36,8 +37,12 @@ body {
 }
 
 .credit {
-  color: #888;
+  position: absolute;
+  bottom: 8px;
+  left: 0;
+  right: 0;
+  color: rgba(136, 136, 136, 0.6);
   font-size: 12px;
-  padding: 8px;
   text-align: center;
+  z-index: 2;
 }
